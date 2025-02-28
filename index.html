@@ -3,35 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>Site Under Construction</title>
     <style>
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
-            font-family: Arial, sans-serif;
             text-align: center;
         }
         .container {
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            padding: 2rem;
+            background-color: white;
             border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: #333;
+            color: #2c3e50;
+            margin-bottom: 1rem;
         }
-        p {
-            color: #666;
+        .construction-icon {
+            font-size: 5rem;
+            margin: 1rem 0;
+            color: #f39c12;
+        }
+        .progress-bar {
+            height: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            margin: 2rem 0;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-fill {
+            background-color: #3498db;
+            height: 100%;
+            width: 30%;
+            border-radius: 10px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+        .coming-soon {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 2rem;
+        }
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #95a5a6;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🚧 Under Construction 🚧</h1>
-        <p>We're working hard to bring you something amazing. Stay tuned!</p>
+        <div class="construction-icon">🚧</div>
+        <h1>Website Under Construction</h1>
+        <p class="coming-soon">Our new website is on its way. We're working hard to bring you something amazing!</p>
+        
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        
+        <p>We appreciate your patience as we build out our new online presence.</p>
+        <p>Check back soon to see our progress!</p>
+        
+        <div class="footer">
+            <p>© 2025 | Created with GitHub Pages</p>
+        </div>
     </div>
 </body>
 </html>
